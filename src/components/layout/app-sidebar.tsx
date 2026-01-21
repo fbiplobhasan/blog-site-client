@@ -12,8 +12,9 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar";
 import Link from "next/link";
-import { adminRotes } from "@/routes/adminRoutes";
-import { userRotes } from "@/routes/userRoutes";
+import { adminRoutes } from "@/routes/adminRoutes";
+import { userRoutes } from "@/routes/userRoutes";
+import { Route } from "@/types";
 
 // This is sample data.
 const data = {
@@ -41,15 +42,15 @@ export function AppSidebar({
 }: {
   user: { role: string } & React.ComponentProps<typeof Sidebar>;
 }) {
-  let routes = [];
+  let routes: Route[] = [];
 
   switch (user.role) {
     case "admin":
-      routes = adminRotes;
+      routes = adminRoutes;
       break;
 
     case "user":
-      routes = userRotes;
+      routes = userRoutes;
       break;
 
     default:
