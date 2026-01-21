@@ -67,16 +67,20 @@ const Navbar = ({
   menu = [
     { title: "Home", url: "/" },
     {
-      title: "About",
-      url: "/about",
+      title: "Development",
+      url: "/development",
     },
     {
-      title: "Blog",
-      url: "/blogs",
+      title: "Marketing",
+      url: "/marketing",
     },
     {
-      title: "Dashboard",
-      url: "/dashboard",
+      title: "Settings",
+      url: "/marketing/settings",
+    },
+    {
+      title: "Sales",
+      url: "/sales",
     },
   ],
   auth = {
