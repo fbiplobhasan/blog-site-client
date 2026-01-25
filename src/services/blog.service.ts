@@ -7,6 +7,7 @@ interface GetBlogParams {
   isFeatured?: boolean;
   search?: string;
   page?: string;
+  limit?: string;
 }
 
 interface ServiceOptions {
